@@ -105,8 +105,9 @@ function randomLanguages() {
         }
     });
 
-    return { languages: selectedLanguages };
+    return selectedLanguages;
 }
+
 
 function randomMediaDevices() {
     return Math.random() < 0.5 ? 'all' : 'limited';

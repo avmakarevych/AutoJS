@@ -2,6 +2,7 @@ const puppeteer = require('puppeteer-extra');
 const readline = require('readline');
 const { loadProfile, createRandomProfile, getProfileList } = require('../profile/profileManager');
 const { applyProfileToPage } = require('../utils/browserSettings');
+const { saveCookies, loadCookies } = require('../utils/cookiesManager');
 
 const rl = readline.createInterface({
     input: process.stdin,
@@ -10,21 +11,61 @@ const rl = readline.createInterface({
 
 async function startPuppeteer(accountName) {
     const profile = loadProfile(accountName);
+    const { host, port } = profile.proxy;
 
     const browser = await puppeteer.launch({
         headless: false,
-        args: ['--disable-blink-features=AutomationControlled']
+        defaultViewport: null,
+        ignoreDefaultArgs: ['--enable-automation'],
+        args: [
+            '--disable-blink-features=AutomationControlled',
+            `--proxy-server=${host}:${port}`
+        ]
     });
 
 
+    browser.on('targetcreated', async (target) => {
+        if (target.type() === 'page') {
+            const newPage = await target.page();
+            if (newPage) {
+                await applyProfileToPage(newPage, profile);
+            }
+        }
+    });
+
     const page = await browser.newPage();
-    await applyProfileToPage(page, profile);
+
+    const cookies = loadCookies(accountName);
+    if (cookies.length > 0) {
+        await page.setCookie(...cookies);
+    }
+
+    if (profile.proxy && profile.proxy.login && profile.proxy.password) {
+        await page.authenticate({
+            username: profile.proxy.login,
+            password: profile.proxy.password
+        });
+    }
     const pages = await browser.pages();
 
     if (pages.length > 1) {
         await pages[0].close();
     }
+
     await page.goto('https://fingerprint.com/demo/');
+
+    rl.question('Do you want to save cookies for this profile? (yes/no) ', async (answer) => {
+        if (answer.toLowerCase().startsWith('y')) {
+            const finalCookies = await page.cookies();
+            saveCookies(accountName, finalCookies);
+            console.log('Cookies have been saved.');
+        } else {
+            console.log('Cookies were not saved.');
+        }
+
+        rl.close();
+        await browser.close();
+    });
 }
 
 function askForProfile() {

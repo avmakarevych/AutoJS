@@ -6,11 +6,8 @@ async function applyProfileToPage(page, profile) {
 
     // Evaluate profile settings on the new document
     await page.evaluateOnNewDocument((profile) => {
-
-        // Chrome Object
         window.navigator.chrome = profile.chromeObject;
 
-        // Languages
         Object.defineProperty(navigator, 'languages', {
             get: () => [profile.languages],
         });

@@ -3,6 +3,7 @@ const path = require('path');
 const profilesDir = path.join(__dirname, '..', '..', 'Profiles');
 
 const { randomizeWebGL } = require('./webGLConfig');
+const { assignProxyToProfile } = require('../utils/proxyManager');
 const {
     randomizeFromList,
     randomBoolean,
@@ -21,8 +22,15 @@ function createRandomProfile(profileName) {
     const screenResolutions = JSON.parse(readDataFromFile(path.join(dataDir, 'screenResolutions.json')));
     const timeZones = readDataFromFile(path.join(dataDir, 'timeZones.txt')).split('\n');
     const webGLConfig = randomizeWebGL();
+    const { host, port, login, password } = assignProxyToProfile(profileName);
 
     const profile = {
+        proxy: {
+            host,
+            port,
+            login,
+            password
+        },
         userAgent: randomizeFromList(userAgents),
         screenResolution: randomizeFromList(screenResolutions),
         timezone: randomizeFromList(timeZones),
