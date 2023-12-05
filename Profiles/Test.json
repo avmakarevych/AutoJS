@@ -1,0 +1,45 @@
+{
+  "userAgent": "Mozilla/5.0 (Linux; Android 4.3; SGH-T999L Build/JSS15J) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.84 Mobile Safari/537.36",
+  "screenResolution": {
+    "width": 2560,
+    "height": 1440
+  },
+  "timezone": "Europe/Moscow",
+  "webdriverFlag": false,
+  "chromeObject": {
+    "runtime": {}
+  },
+  "plugins": [
+    "WebKit built-in PDF::Portable Document Format::internal-pdf-viewer::application/pdf~pdf",
+    "Chrome PDF Plugin::Portable Document Format::internal-pdf-viewer::application/pdf~pdf",
+    "Microsoft Silverlight::Silverlight plug-in::npctrl.dll::application/x-silverlight-2~",
+    "Chrome PDF Plugin::Portable Document Format::internal-pdf-viewer::application/pdf~pdf",
+    "Chrome PDF Plugin::Portable Document Format::internal-pdf-viewer::application/pdf~pdf",
+    "QuickTime Plug-in::The QuickTime Plugin allows you to view a wide variety of multimedia content in web pages.::QuickTimePlugin.plugin::video/quicktime~,audio/x-mpeg~,audio/aiff~,audio/x-wav",
+    "Native Client::::internal-nacl-plugin::application/x-nacl~,application/x-pnacl~",
+    "Chrome PDF Viewer::Portable Document Format::mhjfbmdgcfjbbpaeojofohoefgiehjai::application/pdf~pdf",
+    "Chrome PDF Viewer::Portable Document Format::mhjfbmdgcfjbbpaeojofohoefgiehjai::application/pdf~pdf",
+    "Native Client::::internal-nacl-plugin::application/x-nacl~,application/x-pnacl~",
+    "Native Client::::internal-nacl-plugin::application/x-nacl~,application/x-pnacl~"
+  ],
+  "languages": {
+    "languages": [
+      "en-US",
+      "en",
+      "ru",
+      "es",
+      "ja"
+    ]
+  },
+  "webglVendor": "NVIDIA Corporation",
+  "webglRenderer": "GeForce RTX 2060/PCIe/SSE2",
+  "preventIframe": false,
+  "mediaDevices": "limited",
+  "canvasFingerprint": {
+    "fillStyle": "rgba(0,0,0,0.01)"
+  },
+  "audioContext": {
+    "sampleRate": 48000
+  },
+  "consoleDebugBehavior": "enabled"
+}
