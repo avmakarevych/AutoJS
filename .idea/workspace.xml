@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="9af072c5-d95e-4961-90aa-e11c4bd60f56" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/AutoJS.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Profiles/Test.json" beforeDir="false" afterPath="$PROJECT_DIR$/Profiles/Test.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/screenResolutions.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/screenResolutions.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/userAgents.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data/userAgents.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/webGLConfigurations.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/webGLConfigurations.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/profile/profileManager.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/profile/profileManager.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/profile/webGLConfig.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/profile/webGLConfig.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/browserSettings.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/browserSettings.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/cookiesManager.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/cookiesManager.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/proxyManager.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/proxyManager.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/utils.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/utils.js" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2cOyaOApuQppeHaUZrt5gUNdWxj" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "nodejs_package_manager_path": "npm",
+    "prettierjs.PrettierConfiguration.Package": "/Users/andriimakarevych/Desktop/Projects/JS/AutoJS/node_modules/prettier",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9af072c5-d95e-4961-90aa-e11c4bd60f56" name="Changes" comment="" />
+      <created>1707996981998</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1707996981998</updated>
+      <workItem from="1707996985755" duration="45000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
